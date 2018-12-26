@@ -9,18 +9,22 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
-				<string>qrc</string>
+				<string>qrcode</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string></string>
+			<string>file</string>
 			<key>CFBundleTypeName</key>
-			<string>DocumentType</string>
+			<string>QRC Document</string>
 			<key>CFBundleTypeOSTypes</key>
 			<array>
 				<string>????</string>
 			</array>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.nutznboltzllc.QRCode-doc</string>
+			</array>
 			<key>NSDocumentClass</key>
 			<string>$(PRODUCT_MODULE_NAME).Document</string>
 		</dict>
@@ -43,11 +47,34 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2018 Nutz &amp; Boltz Productions. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>QRC Document</string>
+			<key>UTTypeIconFile</key>
+			<string>file</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.nutznboltzllc.QRCode-doc</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>qrcode</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
