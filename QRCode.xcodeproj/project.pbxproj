@@ -104,8 +104,8 @@
 				76ED289621CF072C00C2A430 /* QRCode */,
 				76ED28AB21CF072D00C2A430 /* QRCodeTests */,
 				76ED28B621CF072D00C2A430 /* QRCodeUITests */,
-				76ED289521CF072C00C2A430 /* Products */,
 				7647F40F21CF17AF00246407 /* Frameworks */,
+				76ED289521CF072C00C2A430 /* Products */,
 			);
 			sourceTree = "<group>";
 		};

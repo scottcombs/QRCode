@@ -68,6 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 					do{
 						let data : Data = try document.data(ofType: "qrcode")
 						try data.write(to: document.fileURL!)
+						document.updateChangeCount(NSDocument.ChangeType.changeDone)
 					}catch{}
 				}else{
 					self.saveAs(sender)
@@ -92,6 +93,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 								let data : Data = try document.data(ofType: "qrcode")
 								try data.write(to: panel.url!)
 								document.fileURL = panel.url!
+								document.updateChangeCount(NSDocument.ChangeType.changeDone
 							}catch{}
 						}
 					}
